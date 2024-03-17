@@ -1,0 +1,14 @@
+{
+  "resourceName": "documents",
+  "policyUUID": "424db525",
+  "bucketName": "digitalboxbarclays1339df6182a74acd97b7119ed17e4",
+  "storageAccess": "auth",
+  "guestAccess": [],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "triggerFunction": "NONE",
+  "groupAccess": {}
+}

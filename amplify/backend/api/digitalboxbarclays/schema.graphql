@@ -1,0 +1,8 @@
+type DigitalBoxDocumentData
+@model
+@auth (rules: [ { allow: owner } ]) {
+    id: ID!
+    name: String
+    metadata: String
+    key: String!
+}

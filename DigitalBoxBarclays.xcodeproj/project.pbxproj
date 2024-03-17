@@ -1,0 +1,630 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		007B948697B738C0C9DCB40C /* DigitalBoxDocumentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F06CFA908272166B9005E40 /* DigitalBoxDocumentData.swift */; };
+		0EF017F5D98072066075DC3D /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = EBB52B7FB6E3B38BF1C9B37E /* awsconfiguration.json */; };
+		762806F25D1D2F2E9F598D23 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 7F58937963439523F6FB382E /* amplifyconfiguration.json */; };
+		8213FAC82BA028170006313D /* BakerSignet.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8213FAC72BA028170006313D /* BakerSignet.ttf */; };
+		82356DAE2BA6C82D0005B96F /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82356DAD2BA6C82D0005B96F /* DashboardView.swift */; };
+		823798632BA35CE4009E1A6F /* PDFListTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823798622BA35CE4009E1A6F /* PDFListTileView.swift */; };
+		823930252BA0C6C2000F6A33 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823930242BA0C6C2000F6A33 /* HomeView.swift */; };
+		82423E112BA2B55700C6519E /* DocumentBoxScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82423E102BA2B55700C6519E /* DocumentBoxScreen.swift */; };
+		82423E132BA2B71400C6519E /* DocScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82423E122BA2B71400C6519E /* DocScannerView.swift */; };
+		8247C6A52BA4067200468FB8 /* QueryModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8247C6A42BA4067200468FB8 /* QueryModels.swift */; };
+		8247C6A72BA41E6300468FB8 /* QueriesVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8247C6A62BA41E6300468FB8 /* QueriesVM.swift */; };
+		8247C6A92BA4213C00468FB8 /* QueryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8247C6A82BA4213C00468FB8 /* QueryService.swift */; };
+		8247C6AB2BA42B1900468FB8 /* QueriesHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8247C6AA2BA42B1900468FB8 /* QueriesHomeView.swift */; };
+		8286C3CB2BA345C4006F9E59 /* AWSAPIPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 8286C3CA2BA345C4006F9E59 /* AWSAPIPlugin */; };
+		8286C3CD2BA345C4006F9E59 /* AWSCognitoAuthPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 8286C3CC2BA345C4006F9E59 /* AWSCognitoAuthPlugin */; };
+		8286C3CF2BA345C4006F9E59 /* AWSDataStorePlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 8286C3CE2BA345C4006F9E59 /* AWSDataStorePlugin */; };
+		8286C3D12BA345C4006F9E59 /* AWSS3StoragePlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 8286C3D02BA345C4006F9E59 /* AWSS3StoragePlugin */; };
+		8286C3D32BA345C4006F9E59 /* Amplify in Frameworks */ = {isa = PBXBuildFile; productRef = 8286C3D22BA345C4006F9E59 /* Amplify */; };
+		8286C3D52BA34772006F9E59 /* DocumentStoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8286C3D42BA34771006F9E59 /* DocumentStoreService.swift */; };
+		828B90202BA622C500EBC077 /* DocumentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828B901F2BA622C500EBC077 /* DocumentDetailView.swift */; };
+		829710512B9F27410037062F /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829710502B9F27410037062F /* Router.swift */; };
+		82B411262BA57504002C2B48 /* models in Resources */ = {isa = PBXBuildFile; fileRef = 82B411252BA57503002C2B48 /* models */; };
+		82CE1A4C2B9EE21E00B1EF7A /* DigitalBoxBarclaysApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CE1A4B2B9EE21E00B1EF7A /* DigitalBoxBarclaysApp.swift */; };
+		82CE1A4E2B9EE21E00B1EF7A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CE1A4D2B9EE21E00B1EF7A /* ContentView.swift */; };
+		82CE1A502B9EE22000B1EF7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82CE1A4F2B9EE22000B1EF7A /* Assets.xcassets */; };
+		82CE1A532B9EE22000B1EF7A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82CE1A522B9EE22000B1EF7A /* Preview Assets.xcassets */; };
+		82CE1A5C2B9EE2E800B1EF7A /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CE1A5B2B9EE2E800B1EF7A /* LaunchView.swift */; };
+		82CFA58C2BA1545000349A8F /* ErrorHandlerVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CFA58B2BA1545000349A8F /* ErrorHandlerVM.swift */; };
+		82E0A1CB2BA03719009E3B24 /* AuthVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E0A1CA2BA03719009E3B24 /* AuthVM.swift */; };
+		82E0A1CE2BA051D5009E3B24 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E0A1CD2BA051D5009E3B24 /* AuthView.swift */; };
+		82E0A1D12BA0523A009E3B24 /* AuthScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E0A1D02BA0523A009E3B24 /* AuthScreen.swift */; };
+		82E0A1D32BA0541A009E3B24 /* OTPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E0A1D22BA0541A009E3B24 /* OTPView.swift */; };
+		82E8B21E2BA34D75001CB2A0 /* DocumentStoreVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E8B21D2BA34D75001CB2A0 /* DocumentStoreVM.swift */; };
+		82E8B2202BA3532D001CB2A0 /* DigitalBoxDocModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E8B21F2BA3532D001CB2A0 /* DigitalBoxDocModels.swift */; };
+		82F9C7082BA0702300E97344 /* AWSAPIPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 82F9C7072BA0702300E97344 /* AWSAPIPlugin */; };
+		82F9C70A2BA0702300E97344 /* AWSDataStorePlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 82F9C7092BA0702300E97344 /* AWSDataStorePlugin */; };
+		82F9C70C2BA0702300E97344 /* Amplify in Frameworks */ = {isa = PBXBuildFile; productRef = 82F9C70B2BA0702300E97344 /* Amplify */; };
+		82F9C70F2BA072CA00E97344 /* AWSCognitoAuthPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 82F9C70E2BA072CA00E97344 /* AWSCognitoAuthPlugin */; };
+		82F9C7112BA073D500E97344 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F9C7102BA073D500E97344 /* AuthenticationService.swift */; };
+		A55D9FB5CBEB00AE2C75E25F /* DigitalBoxDocumentData+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1CFC8F558969C1E0E782E2 /* DigitalBoxDocumentData+Schema.swift */; };
+		CDEA40428AE8F589976E66E0 /* AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3F9689198D880F272D8AE0 /* AmplifyModels.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7A3F9689198D880F272D8AE0 /* AmplifyModels.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = AmplifyModels.swift; path = amplify/generated/models/AmplifyModels.swift; sourceTree = "<group>"; };
+		7F58937963439523F6FB382E /* amplifyconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = amplifyconfiguration.json; sourceTree = "<group>"; };
+		8213FAC72BA028170006313D /* BakerSignet.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BakerSignet.ttf; sourceTree = "<group>"; };
+		8213FAC92BA0285F0006313D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		82356DAD2BA6C82D0005B96F /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		823798622BA35CE4009E1A6F /* PDFListTileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFListTileView.swift; sourceTree = "<group>"; };
+		823930242BA0C6C2000F6A33 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		82423E102BA2B55700C6519E /* DocumentBoxScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentBoxScreen.swift; sourceTree = "<group>"; };
+		82423E122BA2B71400C6519E /* DocScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocScannerView.swift; sourceTree = "<group>"; };
+		8247C6A42BA4067200468FB8 /* QueryModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryModels.swift; sourceTree = "<group>"; };
+		8247C6A62BA41E6300468FB8 /* QueriesVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueriesVM.swift; sourceTree = "<group>"; };
+		8247C6A82BA4213C00468FB8 /* QueryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryService.swift; sourceTree = "<group>"; };
+		8247C6AA2BA42B1900468FB8 /* QueriesHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueriesHomeView.swift; sourceTree = "<group>"; };
+		8286C3D42BA34771006F9E59 /* DocumentStoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentStoreService.swift; sourceTree = "<group>"; };
+		828B901F2BA622C500EBC077 /* DocumentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentDetailView.swift; sourceTree = "<group>"; };
+		829710502B9F27410037062F /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		82B411252BA57503002C2B48 /* models */ = {isa = PBXFileReference; lastKnownFileType = folder; name = models; path = amplify/generated/models; sourceTree = "<group>"; };
+		82CE1A482B9EE21E00B1EF7A /* DigitalBoxBarclays.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DigitalBoxBarclays.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		82CE1A4B2B9EE21E00B1EF7A /* DigitalBoxBarclaysApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitalBoxBarclaysApp.swift; sourceTree = "<group>"; };
+		82CE1A4D2B9EE21E00B1EF7A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		82CE1A4F2B9EE22000B1EF7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		82CE1A522B9EE22000B1EF7A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		82CE1A5B2B9EE2E800B1EF7A /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
+		82CFA58B2BA1545000349A8F /* ErrorHandlerVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandlerVM.swift; sourceTree = "<group>"; };
+		82E0A1CA2BA03719009E3B24 /* AuthVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthVM.swift; sourceTree = "<group>"; };
+		82E0A1CD2BA051D5009E3B24 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		82E0A1D02BA0523A009E3B24 /* AuthScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthScreen.swift; sourceTree = "<group>"; };
+		82E0A1D22BA0541A009E3B24 /* OTPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPView.swift; sourceTree = "<group>"; };
+		82E8B21D2BA34D75001CB2A0 /* DocumentStoreVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentStoreVM.swift; sourceTree = "<group>"; };
+		82E8B21F2BA3532D001CB2A0 /* DigitalBoxDocModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitalBoxDocModels.swift; sourceTree = "<group>"; };
+		82F9C7102BA073D500E97344 /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
+		8F06CFA908272166B9005E40 /* DigitalBoxDocumentData.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = DigitalBoxDocumentData.swift; path = amplify/generated/models/DigitalBoxDocumentData.swift; sourceTree = "<group>"; };
+		EBB52B7FB6E3B38BF1C9B37E /* awsconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
+		FF1CFC8F558969C1E0E782E2 /* DigitalBoxDocumentData+Schema.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = "DigitalBoxDocumentData+Schema.swift"; path = "amplify/generated/models/DigitalBoxDocumentData+Schema.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		82CE1A452B9EE21E00B1EF7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8286C3D32BA345C4006F9E59 /* Amplify in Frameworks */,
+				8286C3CB2BA345C4006F9E59 /* AWSAPIPlugin in Frameworks */,
+				82F9C70C2BA0702300E97344 /* Amplify in Frameworks */,
+				82F9C7082BA0702300E97344 /* AWSAPIPlugin in Frameworks */,
+				82F9C70A2BA0702300E97344 /* AWSDataStorePlugin in Frameworks */,
+				82F9C70F2BA072CA00E97344 /* AWSCognitoAuthPlugin in Frameworks */,
+				8286C3CD2BA345C4006F9E59 /* AWSCognitoAuthPlugin in Frameworks */,
+				8286C3CF2BA345C4006F9E59 /* AWSDataStorePlugin in Frameworks */,
+				8286C3D12BA345C4006F9E59 /* AWSS3StoragePlugin in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		46D78068046B6CFAAF3C39A8 /* AmplifyModels */ = {
+			isa = PBXGroup;
+			children = (
+				82B411252BA57503002C2B48 /* models */,
+				7A3F9689198D880F272D8AE0 /* AmplifyModels.swift */,
+				FF1CFC8F558969C1E0E782E2 /* DigitalBoxDocumentData+Schema.swift */,
+				8F06CFA908272166B9005E40 /* DigitalBoxDocumentData.swift */,
+			);
+			name = AmplifyModels;
+			sourceTree = "<group>";
+		};
+		761538B0E53822217CCA10AB /* AmplifyConfig */ = {
+			isa = PBXGroup;
+			children = (
+				EBB52B7FB6E3B38BF1C9B37E /* awsconfiguration.json */,
+				7F58937963439523F6FB382E /* amplifyconfiguration.json */,
+			);
+			name = AmplifyConfig;
+			sourceTree = "<group>";
+		};
+		8213FAC62BA0280A0006313D /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				8213FAC72BA028170006313D /* BakerSignet.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		82423E0F2BA2B53100C6519E /* DocScanner */ = {
+			isa = PBXGroup;
+			children = (
+				82423E102BA2B55700C6519E /* DocumentBoxScreen.swift */,
+				828B901F2BA622C500EBC077 /* DocumentDetailView.swift */,
+				82423E122BA2B71400C6519E /* DocScannerView.swift */,
+				823798622BA35CE4009E1A6F /* PDFListTileView.swift */,
+				82E8B21D2BA34D75001CB2A0 /* DocumentStoreVM.swift */,
+				82E8B21F2BA3532D001CB2A0 /* DigitalBoxDocModels.swift */,
+				8286C3D42BA34771006F9E59 /* DocumentStoreService.swift */,
+			);
+			path = DocScanner;
+			sourceTree = "<group>";
+		};
+		8247C6A32BA4064F00468FB8 /* QueryTracker */ = {
+			isa = PBXGroup;
+			children = (
+				8247C6A42BA4067200468FB8 /* QueryModels.swift */,
+				8247C6AA2BA42B1900468FB8 /* QueriesHomeView.swift */,
+				8247C6A62BA41E6300468FB8 /* QueriesVM.swift */,
+				8247C6A82BA4213C00468FB8 /* QueryService.swift */,
+			);
+			path = QueryTracker;
+			sourceTree = "<group>";
+		};
+		8297104C2B9F25E50037062F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				829710502B9F27410037062F /* Router.swift */,
+				82F9C7102BA073D500E97344 /* AuthenticationService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		8297104F2B9F26960037062F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				82E0A1CA2BA03719009E3B24 /* AuthVM.swift */,
+				82CFA58B2BA1545000349A8F /* ErrorHandlerVM.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		82CE1A3F2B9EE21E00B1EF7A = {
+			isa = PBXGroup;
+			children = (
+				82CE1A4A2B9EE21E00B1EF7A /* DigitalBoxBarclays */,
+				82CE1A492B9EE21E00B1EF7A /* Products */,
+				761538B0E53822217CCA10AB /* AmplifyConfig */,
+				82F9C70D2BA072CA00E97344 /* Frameworks */,
+				46D78068046B6CFAAF3C39A8 /* AmplifyModels */,
+			);
+			sourceTree = "<group>";
+		};
+		82CE1A492B9EE21E00B1EF7A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				82CE1A482B9EE21E00B1EF7A /* DigitalBoxBarclays.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		82CE1A4A2B9EE21E00B1EF7A /* DigitalBoxBarclays */ = {
+			isa = PBXGroup;
+			children = (
+				8247C6A32BA4064F00468FB8 /* QueryTracker */,
+				82423E0F2BA2B53100C6519E /* DocScanner */,
+				8213FAC92BA0285F0006313D /* Info.plist */,
+				82CE1A4B2B9EE21E00B1EF7A /* DigitalBoxBarclaysApp.swift */,
+				82CE1A4D2B9EE21E00B1EF7A /* ContentView.swift */,
+				82E0A1CC2BA051C0009E3B24 /* Auth */,
+				8213FAC62BA0280A0006313D /* Fonts */,
+				8297104F2B9F26960037062F /* ViewModels */,
+				8297104C2B9F25E50037062F /* Services */,
+				823930242BA0C6C2000F6A33 /* HomeView.swift */,
+				82356DAD2BA6C82D0005B96F /* DashboardView.swift */,
+				82CE1A4F2B9EE22000B1EF7A /* Assets.xcassets */,
+				82CE1A512B9EE22000B1EF7A /* Preview Content */,
+			);
+			path = DigitalBoxBarclays;
+			sourceTree = "<group>";
+		};
+		82CE1A512B9EE22000B1EF7A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				82CE1A522B9EE22000B1EF7A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		82E0A1CC2BA051C0009E3B24 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				82E0A1CD2BA051D5009E3B24 /* AuthView.swift */,
+				82CE1A5B2B9EE2E800B1EF7A /* LaunchView.swift */,
+				82E0A1D02BA0523A009E3B24 /* AuthScreen.swift */,
+				82E0A1D22BA0541A009E3B24 /* OTPView.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		82F9C70D2BA072CA00E97344 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		82CE1A472B9EE21E00B1EF7A /* DigitalBoxBarclays */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82CE1A562B9EE22000B1EF7A /* Build configuration list for PBXNativeTarget "DigitalBoxBarclays" */;
+			buildPhases = (
+				82CE1A442B9EE21E00B1EF7A /* Sources */,
+				82CE1A452B9EE21E00B1EF7A /* Frameworks */,
+				82CE1A462B9EE21E00B1EF7A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DigitalBoxBarclays;
+			packageProductDependencies = (
+				82F9C7072BA0702300E97344 /* AWSAPIPlugin */,
+				82F9C7092BA0702300E97344 /* AWSDataStorePlugin */,
+				82F9C70B2BA0702300E97344 /* Amplify */,
+				82F9C70E2BA072CA00E97344 /* AWSCognitoAuthPlugin */,
+				8286C3CA2BA345C4006F9E59 /* AWSAPIPlugin */,
+				8286C3CC2BA345C4006F9E59 /* AWSCognitoAuthPlugin */,
+				8286C3CE2BA345C4006F9E59 /* AWSDataStorePlugin */,
+				8286C3D02BA345C4006F9E59 /* AWSS3StoragePlugin */,
+				8286C3D22BA345C4006F9E59 /* Amplify */,
+			);
+			productName = DigitalBoxBarclays;
+			productReference = 82CE1A482B9EE21E00B1EF7A /* DigitalBoxBarclays.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		82CE1A402B9EE21E00B1EF7A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					82CE1A472B9EE21E00B1EF7A = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 82CE1A432B9EE21E00B1EF7A /* Build configuration list for PBXProject "DigitalBoxBarclays" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 82CE1A3F2B9EE21E00B1EF7A;
+			packageReferences = (
+				82F9C7062BA0702300E97344 /* XCRemoteSwiftPackageReference "amplify-swift" */,
+			);
+			productRefGroup = 82CE1A492B9EE21E00B1EF7A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				82CE1A472B9EE21E00B1EF7A /* DigitalBoxBarclays */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		82CE1A462B9EE21E00B1EF7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82CE1A532B9EE22000B1EF7A /* Preview Assets.xcassets in Resources */,
+				8213FAC82BA028170006313D /* BakerSignet.ttf in Resources */,
+				82B411262BA57504002C2B48 /* models in Resources */,
+				82CE1A502B9EE22000B1EF7A /* Assets.xcassets in Resources */,
+				0EF017F5D98072066075DC3D /* awsconfiguration.json in Resources */,
+				762806F25D1D2F2E9F598D23 /* amplifyconfiguration.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		82CE1A442B9EE21E00B1EF7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82CE1A4E2B9EE21E00B1EF7A /* ContentView.swift in Sources */,
+				82CE1A5C2B9EE2E800B1EF7A /* LaunchView.swift in Sources */,
+				82CE1A4C2B9EE21E00B1EF7A /* DigitalBoxBarclaysApp.swift in Sources */,
+				82F9C7112BA073D500E97344 /* AuthenticationService.swift in Sources */,
+				829710512B9F27410037062F /* Router.swift in Sources */,
+				82E8B21E2BA34D75001CB2A0 /* DocumentStoreVM.swift in Sources */,
+				82E0A1D12BA0523A009E3B24 /* AuthScreen.swift in Sources */,
+				8247C6A72BA41E6300468FB8 /* QueriesVM.swift in Sources */,
+				82423E132BA2B71400C6519E /* DocScannerView.swift in Sources */,
+				82E0A1D32BA0541A009E3B24 /* OTPView.swift in Sources */,
+				8247C6AB2BA42B1900468FB8 /* QueriesHomeView.swift in Sources */,
+				82423E112BA2B55700C6519E /* DocumentBoxScreen.swift in Sources */,
+				82E0A1CB2BA03719009E3B24 /* AuthVM.swift in Sources */,
+				823930252BA0C6C2000F6A33 /* HomeView.swift in Sources */,
+				82E0A1CE2BA051D5009E3B24 /* AuthView.swift in Sources */,
+				8286C3D52BA34772006F9E59 /* DocumentStoreService.swift in Sources */,
+				8247C6A92BA4213C00468FB8 /* QueryService.swift in Sources */,
+				82CFA58C2BA1545000349A8F /* ErrorHandlerVM.swift in Sources */,
+				823798632BA35CE4009E1A6F /* PDFListTileView.swift in Sources */,
+				CDEA40428AE8F589976E66E0 /* AmplifyModels.swift in Sources */,
+				82E8B2202BA3532D001CB2A0 /* DigitalBoxDocModels.swift in Sources */,
+				8247C6A52BA4067200468FB8 /* QueryModels.swift in Sources */,
+				828B90202BA622C500EBC077 /* DocumentDetailView.swift in Sources */,
+				A55D9FB5CBEB00AE2C75E25F /* DigitalBoxDocumentData+Schema.swift in Sources */,
+				007B948697B738C0C9DCB40C /* DigitalBoxDocumentData.swift in Sources */,
+				82356DAE2BA6C82D0005B96F /* DashboardView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		82CE1A542B9EE22000B1EF7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		82CE1A552B9EE22000B1EF7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		82CE1A572B9EE22000B1EF7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DigitalBoxBarclays/Preview Content\"";
+				DEVELOPMENT_TEAM = 6VD343QVV6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DigitalBoxBarclays/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need to access your camera to scan documents";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.crpatil1901.DigitalBoxBarclays;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		82CE1A582B9EE22000B1EF7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DigitalBoxBarclays/Preview Content\"";
+				DEVELOPMENT_TEAM = 6VD343QVV6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DigitalBoxBarclays/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need to access your camera to scan documents";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.crpatil1901.DigitalBoxBarclays;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		82CE1A432B9EE21E00B1EF7A /* Build configuration list for PBXProject "DigitalBoxBarclays" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82CE1A542B9EE22000B1EF7A /* Debug */,
+				82CE1A552B9EE22000B1EF7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		82CE1A562B9EE22000B1EF7A /* Build configuration list for PBXNativeTarget "DigitalBoxBarclays" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82CE1A572B9EE22000B1EF7A /* Debug */,
+				82CE1A582B9EE22000B1EF7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		82F9C7062BA0702300E97344 /* XCRemoteSwiftPackageReference "amplify-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/aws-amplify/amplify-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.27.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8286C3CA2BA345C4006F9E59 /* AWSAPIPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 82F9C7062BA0702300E97344 /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSAPIPlugin;
+		};
+		8286C3CC2BA345C4006F9E59 /* AWSCognitoAuthPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 82F9C7062BA0702300E97344 /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSCognitoAuthPlugin;
+		};
+		8286C3CE2BA345C4006F9E59 /* AWSDataStorePlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 82F9C7062BA0702300E97344 /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSDataStorePlugin;
+		};
+		8286C3D02BA345C4006F9E59 /* AWSS3StoragePlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 82F9C7062BA0702300E97344 /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSS3StoragePlugin;
+		};
+		8286C3D22BA345C4006F9E59 /* Amplify */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 82F9C7062BA0702300E97344 /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = Amplify;
+		};
+		82F9C7072BA0702300E97344 /* AWSAPIPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 82F9C7062BA0702300E97344 /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSAPIPlugin;
+		};
+		82F9C7092BA0702300E97344 /* AWSDataStorePlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 82F9C7062BA0702300E97344 /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSDataStorePlugin;
+		};
+		82F9C70B2BA0702300E97344 /* Amplify */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 82F9C7062BA0702300E97344 /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = Amplify;
+		};
+		82F9C70E2BA072CA00E97344 /* AWSCognitoAuthPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 82F9C7062BA0702300E97344 /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSCognitoAuthPlugin;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 82CE1A402B9EE21E00B1EF7A /* Project object */;
+}

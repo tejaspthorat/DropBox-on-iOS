@@ -1,0 +1,11 @@
+{
+  "AppSyncApiName": "digitalboxbarclays",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "authdigitalboxbarclays94c77eba",
+      "Outputs.UserPoolId"
+    ]
+  }
+}
